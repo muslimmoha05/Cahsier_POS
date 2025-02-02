@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CasheirPOS" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Button Styles -->
+        <item name="android:buttonStyle">@style/Widget.Material3.Button</item>
+        <item name="borderlessButtonStyle">@style/Custom.Material3.Button.Borderless</item>
+    </style>
+
+    <style name="Theme.CasheirPOS" parent="Base.Theme.CasheirPOS" />
+
+    <!-- Custom Borderless Button Style -->
+    <style name="Custom.Material3.Button.Borderless" parent="Widget.Material3.Button.TextButton">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <!-- Customize your theme here -->
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Theme.CasheirPOS.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.CasheirPOS.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CasheirPOS.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

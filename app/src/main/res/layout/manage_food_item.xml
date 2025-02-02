@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Food ID TextView -->
+        <TextView
+            android:id="@+id/foodIdTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/food_id_description"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/food_id"
+            android:textSize="16sp" />
+
+        <!-- Food Name TextView -->
+        <TextView
+            android:id="@+id/foodNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/food_name_description"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/food_name"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <!-- Category Name TextView -->
+        <TextView
+            android:id="@+id/foodCategoryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/category_name_description"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/category_name"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <!-- Food Price TextView -->
+        <TextView
+            android:id="@+id/foodPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/food_price_description"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="@string/food_price"
+            android:textSize="16sp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/deleteFoodButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/delete" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

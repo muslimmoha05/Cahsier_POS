@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.lovelycafe.casheirpos.client.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.lovelycafe.casheirpos.client.ui.menu.MenuFragment"
+        android:label="@string/title_menu"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/go_from_navigation_menu_to_navigation_food_list"
+            app:destination="@+id/navigation_food_list"
+            app:popUpTo="@id/navigation_menu"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_food_list"
+        android:name="com.lovelycafe.casheirpos.client.ui.menu.FoodListFragment"
+        android:label="@string/title_food_list"
+        tools:layout="@layout/fragment_food_list">
+        <argument
+            android:name="categoryId"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.lovelycafe.casheirpos.client.ui.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_bill"
+        android:name="com.lovelycafe.casheirpos.client.ui.bill.BillFragment"
+        android:label="@string/title_bills"
+        tools:layout="@layout/fragment_bill" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.lovelycafe.casheirpos.client.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

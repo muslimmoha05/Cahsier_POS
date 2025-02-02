@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Profile Picture with CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_profile_placeholder"
+                android:contentDescription="@string/profile_picture"
+                android:scaleType="centerCrop"
+                android:background="?attr/selectableItemBackgroundBorderless" />
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:padding="16dp"
+            android:inputType="text"
+            android:autofillHints="username"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number"
+            android:autofillHints="phone"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:autofillHints="postalAddress"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Circle background -->
+    <path
+        android:fillColor="#E0E0E0"
+        android:pathData="M24,0 C37.6,0 48,10.4 48,24 C48,37.6 37.6,48 24,48 C10.4,48 0,37.6 0,24 C0,10.4 10.4,0 24,0 Z" />
+
+    <!-- Placeholder icon (generic avatar) -->
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M24,12 C27.3137,12 30,14.6863 30,18 C30,21.3137 27.3137,24 24,24 C20.6863,24 18,21.3137 18,18 C18,14.6863 20.6863,12 24,12 Z" />
+
+    <path
+        android:fillColor="#BDBDBD"
+        android:pathData="M12,32 C12,25.3714 16.5185,22 24,22 C31.4815,22 36,25.3714 36,32"
+        android:strokeWidth="2" android:strokeColor="#BDBDBD" />
+</vector>

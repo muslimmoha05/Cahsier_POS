@@ -25,7 +25,6 @@ I'm a passionate Mobile application and software developer with a love for creat
 
 ## Connect with Me
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yourprofile)
-[![Twitter](https://img.shields.io/badge/Twitter-blue?logo=twitter&logoColor=white)](https://twitter.com/yourprofile)
 [![Personal Website](https://img.shields.io/badge/Website-blue?logo=google-chrome&logoColor=white)](https://yourwebsite.com)
 
 ## Recent Projects
